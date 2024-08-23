@@ -30,6 +30,10 @@ async function login(req, res) {
         if (error.message === 'Senha incorreta') {
             return res.status(409).send('Senha incorreta');
         }
+        if (error.message === 'Usuário não encontrado') {
+            return res.status(409).send('Email incorreto');
+        }
+        
         console.error('Erro no servidor:', error);
         return res.status(500).send('Ocorreu um erro interno. Por favor, tente novamente mais tarde.');
     }
