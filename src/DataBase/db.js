@@ -4,14 +4,14 @@ dotenv.config();
 
 const { Pool } = pg;
 
-//const configDatabase = {
+// const configDatabase = {
 //  connectionString: process.env.DATABASE_URL,
 //  ...(process.env.NODE_ENV === "prod" && {
 //    ssl: {
 //     rejectUnauthorized: false,
 //    },
 //  }),
-//};
+// };
 // const db = new Pool(configDatabase);
 
 
