@@ -17,7 +17,7 @@ server.use(autenticarRotas)
 server.use(tarefasRotas)
 
 
-const porta = process.env.PORTA 
+const porta = process.env.PORTA || 5000;
 
 server.listen(porta, () => {
     console.log(`*** Servidor rodando na porta ${porta} ***`);
